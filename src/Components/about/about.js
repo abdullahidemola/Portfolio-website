@@ -1,5 +1,4 @@
 import "./about.scss";
-import abd from "../../img/Abd.jpg";
 import ade from "../../img/Ade.jpg";
 const About = () => {
   return (

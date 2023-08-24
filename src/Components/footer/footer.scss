@@ -30,35 +30,30 @@
 
   padding: 1rem 8px;
 
-
-    @include media("<= 628px") {
+  @include media("<= 628px") {
     display: block;
     .ft-name {
       width: fit-content;
       margin: auto;
       padding-bottom: 1rem;
-    
-  }
+    }
 
-  .links {
+    .links {
       display: flex;
       width: 100%;
       justify-content: center;
       padding-bottom: 1rem;
-    a {
     }
-  }
 
-  .year {
-    width: fit-content;
-    margin: auto;
-  
-  }
+    .year {
+      width: fit-content;
+      margin: auto;
+    }
   }
 
   @include media("<= 585px ") {
     margin-top: 4rem;
-     .skill {
+    .skill {
       .sk-head {
         font-size: 40px;
       }
@@ -69,13 +64,6 @@
         }
         .tool {
           font-size: 28px;
-        }
-      }
-    }
-
-    .contact-btn {
-      a {
-        h1 {
         }
       }
     }

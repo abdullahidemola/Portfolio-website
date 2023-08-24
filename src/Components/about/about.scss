@@ -52,7 +52,6 @@
       margin: auto;
       margin-left: 30px;
       width: 800px;
-      // height: 300px;
       h3 {
         font-size: 20px;
         font-weight: 100;
@@ -71,7 +70,6 @@
     }
     .about-text {
       margin: auto;
-      // margin-left: 20px;
       width: 700px;
       height: 300px;
       letter-spacing: 2px;
@@ -85,7 +83,6 @@
   @include media("<= 480px ") {
     .about-text {
       margin: auto;
-      // margin-left: 20px;
       width: 700px;
       height: 300px;
       letter-spacing: 2px;

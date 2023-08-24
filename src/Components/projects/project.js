@@ -61,23 +61,6 @@ const Project = () => {
             </div>
           </a>
         </div>
-
-        <div className="line"></div>
-        <div className="link sticky-note">
-          <a
-            href="https://ademidenote.netlify.app/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <h1 className="web-name">sticky note </h1>
-            <div className="testts">
-              <span className="details">
-                A multi-color sticky-note that built using reactJs, HTML and CSS
-              </span>
-              <button className="visit-btn">vist</button>
-            </div>
-          </a>
-        </div>
         <div className="line"></div>
       </div>
     </div>

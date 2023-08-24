@@ -6,14 +6,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
-  // margin: 30px 15px;
+
   margin-inline: 20px;
   height: 10%;
   font-family: $primary-font;
 
+  .name {
+    animation: slideFromTop 2s linear 1;
+  }
   .clock {
     font-size: 15px;
+    animation: slideFromTop 2s linear 1;
+  }
+
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
 }

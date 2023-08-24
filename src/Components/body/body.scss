@@ -19,11 +19,11 @@
       padding-left: 25px;
     }
     .ft-text {
-      animation: slideFromLeft 5s ease-in-out 1;
+      animation: slideFromLeft 2s linear 1;
     }
     .dev-text {
       padding-left: 20rem;
-      animation: slideFromRight 4s linear 1;
+      animation: slideFromRight 2s linear 1;
     }
   }
 
@@ -42,7 +42,6 @@
   @include media("<= 1162px") {
     .text {
       h1 {
-        // font-size: 7rem;
         padding: 0;
       }
       .dev-text {
@@ -88,21 +87,15 @@
 
   @keyframes slideFromRight {
     0% {
-      transform: translateX(400px);
+      transform: translateX(150px);
       opacity: 0;
     }
-    // 25% {
-    //   transform: translateX(200px);
-    //   opacity: 0.5;
-    // }
+
     50% {
       transform: translateX(100px);
       opacity: 0.5;
     }
-    // 75% {
-    //   transform: translateX(50px);
-    //   opacity: 0.75;
-    // }
+
     100% {
       transform: translateX(0px);
       opacity: 1;
@@ -111,16 +104,12 @@
 
   @keyframes slideFromLeft {
     0% {
-      transform: translateX(-500px);
+      transform: translateX(-200px);
       opacity: 0;
     }
     50% {
-      transform: translateX(200px);
+      transform: translateX(-100px);
       opacity: 0.5;
-    }
-    75% {
-      transform: translateX(-50px);
-      opacity: 0.75;
     }
     100% {
       transform: translateX(0px);

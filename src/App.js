@@ -1,4 +1,3 @@
-import Navbar from "./Components/navbar/Navbar";
 import Body from "./Components/body/body";
 import Project from "./Components/projects/project";
 import About from "./Components/about/about";

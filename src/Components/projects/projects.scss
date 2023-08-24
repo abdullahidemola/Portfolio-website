@@ -22,32 +22,34 @@
   .contents {
     .link {
       width: 100%;
+      color: $primary-color2;
 
       a {
         text-decoration: none;
         color: inherit;
         width: 100%;
-        // height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        
         h1 {
           text-transform: uppercase;
           width: 200px;
-          // height: 100%;
           padding: 50px 0;
           font-weight: 100;
         }
 
         .testts {
-          // border: 1px solid red;
           display: flex;
           align-items: center;
           width: 65vw;
           justify-content: space-between;
           .details {
             max-width: 390px;
-            color: $primary-color3;
+          }
+          .details:hover {
+            color: $primary-color1;
           }
           .visit-btn {
             margin-right: 30px;
@@ -58,18 +60,19 @@
           }
         }
       }
+      // a:hover {
+      //   color: $primary-color1;
+      // }
+    }
+    .link:hover {
+      color: $primary-color1;
+      transform: translateX(10px);
+
     }
   }
 
   @include media("<= 898px") {
-    // border: 1px solid red;
     padding-left: 12px;
-    .project {
-    }
-
-    .line {
-
-    }
 
     .contents {
       .link {
@@ -79,7 +82,6 @@
             padding: 20px 0;
           }
           .testts {
-            // border: 1px solid yellow;
             display: flex;
             align-items: center;
             width: 90vw;
@@ -100,19 +102,9 @@
     }
   }
   @include media("<= 579px ") {
-    .project {
-    }
-
-    .line {
-    }
-
     .contents {
       .link {
         a {
-          h1 {
-          }
-          .details {
-          }
           .visit-btn {
             display: none;
           }
