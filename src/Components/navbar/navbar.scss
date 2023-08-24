@@ -1,0 +1,19 @@
+@import "../../style/variables.scss";
+
+.navbar {
+  color: $primary-color1;
+  // position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  // margin: 30px 15px;
+  margin-inline: 20px;
+  height: 10%;
+  font-family: $primary-font;
+
+  .clock {
+    font-size: 15px;
+  }
+}

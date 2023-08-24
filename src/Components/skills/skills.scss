@@ -1,0 +1,95 @@
+@import "../../style/variables.scss";
+
+.skill-container {
+  color: $primary-color;
+  font-family: $primary-font;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  .skill {
+    .sk-head {
+      font-size: 50px;
+      font-weight: 200;
+    }
+
+    .sk-content {
+      .sk-line {
+        width: 35rem;
+        height: 1px;
+        border: 1px solid;
+        margin: 30px 0;
+      }
+      .tool {
+        font-size: 34px;
+        font-weight: 200;
+      }
+    }
+  }
+
+  .contact-btn {
+    height: 5rem;
+    background-color: $primary-color;
+    width: 15rem;
+    border-radius: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: $primary-font;
+      padding: 0.5rem 15rem;
+      h1 {
+        font-weight: 400;
+      }
+    }
+  }
+  margin-bottom: 15rem;
+
+  @include media("<= 873px") {
+    display: block;
+    .skill {
+      margin-left: 0;
+      .sk-head {
+      }
+
+      .sk-content {
+        .sk-line {
+        }
+        .tool {
+        }
+      }
+    }
+
+    .contact-btn {
+      margin-top: 50px;
+      margin-left: 12px;
+      a {
+        h1 {
+        }
+      }
+    }
+  }
+
+  @include media("<= 585px ") {
+    margin-top: 4rem;
+    .skill {
+      .sk-head {
+        font-size: 40px;
+      }
+
+      .sk-content {
+        padding: 12px;
+        .sk-line {
+          width: 90vw;
+        }
+        .tool {
+          font-size: 28px;
+        }
+      }
+    }
+
+    .contact-btn {
+      padding-left: 12px;
+     
+    }
+  }
+}
